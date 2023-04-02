@@ -140,7 +140,7 @@ img {
 
 @media (max-width: 860px) {
   .nav {
-    width: 60%;
+    width: 0;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -149,6 +149,10 @@ img {
     z-index: 10;
     transition: 0.1s ease-in-out;
     padding-top: var(--header-height);
+  }
+
+  .show__menu {
+    width: 60%;
   }
 
   .nav__menu {
