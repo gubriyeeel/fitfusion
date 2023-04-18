@@ -5,3 +5,5 @@
 <b>Contributors:</b><br>
 Gabriel Rupert Roy Sufrir<br>
 Gian Pascua
+
+<img src="/assets/readme/hero.jpg" alt="A barbel">
