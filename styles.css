@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap);
 
 :root {
-  --header-height: 2.78em;
+  --header-height: 3.5em;
   /* Colors */
   --primary-color: #ff7101;
   --black-color: #1f1f1f;
@@ -16,6 +16,11 @@
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
+
+  /* Transitions */
+  --transition-fast: all 0.1s ease-in-out;
+  --transition-normal: all 0.5s ease-in-out;
+  --transition-slow: all 1s ease-in-out;
 }
 
 /* CSS Resets */
@@ -57,7 +62,7 @@ body {
   justify-content: center;
   border-radius: 0.8em;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: var(--transition-normal);
 }
 
 .button:hover {
@@ -74,7 +79,7 @@ header {
   position: fixed;
   inset: 0;
   z-index: 10;
-  padding: 0 10vw;
+  padding: 0 8vw;
 }
 
 .header__container {
@@ -89,6 +94,10 @@ header {
   align-items: center;
   color: var(--white-color);
   font-size: var(--h1-font-size);
+}
+
+.company__name {
+  letter-spacing: 1.5px;
 }
 
 .fit {
@@ -107,12 +116,15 @@ header {
   font-weight: 300;
   font-size: var(--normal-font-size);
   color: var(--white-color);
-  padding-bottom: 0.5em;
-  transition: 0.1s ease-in-out;
+  padding-bottom: 0.1em;
+  transition: var(--transition-fast);
   letter-spacing: 0.1em;
 }
 
-.nav__link:hover,
+.nav__link:not(.active):hover {
+  border-bottom: 2px solid rgba(255, 113, 1, 0.5);
+}
+
 .active {
   border-bottom: 2px solid var(--primary-color);
 }
@@ -122,14 +134,17 @@ header {
 }
 
 #burger-menu {
+  --menu-size: 1.5em;
+  /*  */
   aspect-ratio: 1 / 1;
-  width: 1.4em;
+  width: var(--menu-size);
+  font-size: var(--menu-size);
   text-align: center;
 }
 
 /* Media Queries */
 
-@media (max-width: 945px) {
+@media only screen and (max-width: 768px) {
   header {
     padding-inline: 5vw;
   }
