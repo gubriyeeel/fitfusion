@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap);
 
 :root {
-  --header-height: 3.5em;
+  --header-height: 2.78em;
   /* Colors */
   --primary-color: #ff7101;
   --black-color: #1f1f1f;
@@ -69,13 +69,10 @@ body {
 /* Header */
 
 header {
-  width: 100%;
   height: var(--header-height);
   background-color: var(--black-color);
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   z-index: 10;
   padding: 0 10vw;
 }
@@ -136,6 +133,7 @@ header {
   header {
     padding-inline: 5vw;
   }
+
   .nav {
     width: 0;
     height: 100vh;
