@@ -207,7 +207,7 @@ header {
   aspect-ratio: 1 / 1;
   width: 130px;
   z-index: -1;
-  transform: rotateX(20deg);
+  transform: rotateX(15deg);
 }
 
 .section__header {
