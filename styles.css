@@ -132,7 +132,7 @@ header {
   display: none;
 }
 
-#burger-menu {
+#burger__menu {
   --menu-size: 1.5em;
   /*  */
   aspect-ratio: 1 / 1;
@@ -142,7 +142,7 @@ header {
 }
 
 /* Home */
-.sliding__background {
+#sliding__background {
   display: flex;
   align-items: center;
   padding: 0;
@@ -154,22 +154,38 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  transition: background-image 0.5s ease-in-out, background-position-x 0.5s;
+  background-position-x: 0;
 }
 
 .background__image {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  background-position: center;
+  height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
 }
 
-.bg-image.active {
-  opacity: 1;
+@keyframes slide {
+  from {
+    background-position: center;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.slide {
+  animation: slide 0.5s ease-in-out;
+}
+
+#sliding__background.slide {
+  background-position-x: -100%;
 }
 
 .overlay {
