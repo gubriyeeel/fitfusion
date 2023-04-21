@@ -264,6 +264,11 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.about__container .left img:nth-child(2) {
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 }
 
 .about__container .right {
@@ -275,6 +280,7 @@ header {
 .about__paragraph {
   color: white;
   line-height: 1.5;
+  padding-left: 1em;
 }
 
 /* ! About */
@@ -342,10 +348,21 @@ header {
   #sliding__background {
     background-position: center;
   }
+  .about__container .left {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .about__container .left img {
+    margin-top: -6em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
   .about__container {
     display: flex;
     flex-direction: column;
+    padding-inline: 2em;
   }
 }
 
