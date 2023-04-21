@@ -11,9 +11,9 @@
   /* Font-Sizes */
   --desktop-title: 3.5rem;
   --mobile-title: 2.5rem;
-  --h1-font-size: 1.75rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
+  --h1-font-size: 2.5em;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
   --normal-font-size: 1rem;
 
   /* Transitions */
@@ -217,15 +217,16 @@ header {
 }
 
 .section__header {
+  font-size: var(--h3-font-size);
   font-weight: normal;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   color: white;
 }
 
 .home p {
   color: var(--white-color);
-  font-size: var(--h3-font-size);
   margin-bottom: 2em;
+  color: rgb(217, 217, 217);
 }
 
 .header__text {
