@@ -90,7 +90,7 @@ header {
   display: flex;
   align-items: center;
   color: var(--white-color);
-  font-size: var(--h1-font-size);
+  font-size: var(--h3-font-size);
 }
 
 .company__name {
@@ -241,7 +241,7 @@ header {
   min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 5em;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,6 +249,7 @@ header {
 
 .about__container {
   height: 80vh;
+  padding-block: 5em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3em;
