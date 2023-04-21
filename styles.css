@@ -191,7 +191,7 @@ header {
 
 .content {
   text-transform: lowercase;
-  width: 60em;
+  width: 50em;
   transform: translateY(-5em);
   color: var(--white-color);
 }
@@ -201,6 +201,7 @@ header {
   font-size: var(--desktop-title);
   margin-bottom: 1em;
   line-height: 1.3;
+  color: white;
 }
 
 .section__title::after {
@@ -219,6 +220,7 @@ header {
 .section__header {
   font-weight: normal;
   margin-bottom: 1em;
+  color: white;
 }
 
 .home p {
@@ -230,6 +232,17 @@ header {
 .header__text {
   font-size: 2rem;
 }
+
+/* ! Home */
+
+/* About */
+
+.about__paragraph {
+  color: white;
+  line-height: 1.5;
+}
+
+/* ! About */
 
 /* Media Queries */
 
@@ -295,3 +308,5 @@ header {
     background-position: center;
   }
 }
+
+/* ! Media Queries */
