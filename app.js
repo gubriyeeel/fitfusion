@@ -10,29 +10,22 @@ const backgroundImages = [
   '../assets/images/background-slide-two.jpg',
 ];
 
+const numBackgroundImages = backgroundImages.length;
 let currentBackgroundIndex = 0;
+const nextBackgroundImage = new Image();
 
 const nextBackground = () => {
-  currentBackgroundIndex++;
-  if (currentBackgroundIndex >= backgroundImages.length) {
-    currentBackgroundIndex = 0;
-  }
-
-  backgroundSlider.classList.add('slide');
+  currentBackgroundIndex = (currentBackgroundIndex + 1) % numBackgroundImages;
   backgroundSlider.style.opacity = 0;
-
-  const nextBackgroundImage = new Image();
   nextBackgroundImage.onload = () => {
     backgroundSlider.style.backgroundImage = `url(${nextBackgroundImage.src})`;
     backgroundSlider.style.opacity = 1;
-    backgroundSlider.classList.remove('slide');
   };
   nextBackgroundImage.src = backgroundImages[currentBackgroundIndex];
-
-  setTimeout(nextBackground, 4000);
 };
 
 nextBackground();
+setInterval(nextBackground, 4000);
 
 toggle.onclick = () => {
   nav.classList.toggle('show__menu');
