@@ -225,7 +225,7 @@ header {
 .home p {
   color: var(--white-color);
   font-size: var(--h3-font-size);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .header__text {
@@ -275,12 +275,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
 }
 
 .about__paragraph {
   color: white;
   line-height: 1.5;
-  padding-left: 1em;
+  padding-inline: 1em;
+  margin-bottom: 2em;
 }
 
 /* ! About */
@@ -347,14 +349,21 @@ header {
 
   #sliding__background {
     background-position: center;
+    clip-path: none;
   }
+
   .about__container .left {
     display: flex;
     flex-direction: column;
   }
 
-  .about__container .left img {
-    margin-top: -6em;
+  .about__container .left img,
+  .about__container .left img:nth-child(2) {
+    clip-path: none;
+  }
+
+  .about__paragraph {
+    padding-inline: 0.5em;
   }
 }
 
