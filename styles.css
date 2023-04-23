@@ -34,7 +34,6 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark light;
 }
 
 body {
@@ -43,6 +42,8 @@ body {
   font-size: var(--normal-font-size);
   color: var(--black-color);
   padding-top: var(--header-height);
+  background: #121212;
+  color: white;
 
   overflow-x: hidden;
 }
