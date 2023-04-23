@@ -22,8 +22,6 @@
   --transition-slow: all 1s ease-in-out;
 }
 
-/* CSS Resets */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -138,6 +136,8 @@ header {
   font-size: var(--menu-size);
   text-align: center;
 }
+
+/* ! Header */
 
 /* Home */
 #sliding__background {
@@ -289,6 +289,10 @@ header {
 
 /* ! About */
 
+/* Courses */
+
+/* ! Courses */
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
@@ -351,29 +355,23 @@ header {
 
   #sliding__background {
     background-position: center;
-    clip-path: none;
+    clip-path: unset;
+  }
+
+  .about {
+    padding-inline: 9%;
+  }
+
+  .about__container {
+    grid-template-columns: unset;
   }
 
   .about__container .left {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about__container .left img,
-  .about__container .left img:nth-child(2) {
-    clip-path: none;
+    display: none;
   }
 
   .about__paragraph {
     padding-inline: 0.5em;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .about__container {
-    display: flex;
-    flex-direction: column;
-    padding-inline: 2em;
   }
 }
 
