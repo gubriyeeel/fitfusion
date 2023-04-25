@@ -306,8 +306,51 @@ header {
 }
 
 .courses__content {
-  max-width: 1200px;
-  padding: var(--header-height) 2em;
+  width: 100%;
+  padding-inline: 2em;
+}
+
+.courses__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.courses__list .course {
+  aspect-ratio: 3 / 2;
+  width: 300px;
+  margin: 0.3em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.courses__list .course img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.courses__list .course .course__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 113, 1, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses__list .course:hover .course__info {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* ! Courses */
@@ -388,6 +431,10 @@ header {
 
   .about__paragraph {
     padding-inline: 0.5em;
+  }
+
+  .courses__content {
+    padding: var(--header-height) 2em;
   }
 }
 
