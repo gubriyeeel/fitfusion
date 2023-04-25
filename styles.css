@@ -250,7 +250,7 @@ header {
 
 .about__container {
   height: 80vh;
-  padding-block: 5em;
+  padding: var(--header-height) 2em 0 2em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3em;
@@ -293,12 +293,21 @@ header {
 /* Courses */
 
 .courses__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   width: 100%;
   min-height: 100vh;
   background: url(/assets/images/courses-background.png) no-repeat;
   background-position: center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.courses__content {
+  max-width: 1200px;
+  padding: var(--header-height) 2em;
 }
 
 /* ! Courses */
@@ -368,12 +377,9 @@ header {
     clip-path: unset;
   }
 
-  .about {
-    padding-inline: 9%;
-  }
-
   .about__container {
     grid-template-columns: unset;
+    padding: var(--header-height) 9% 0 9%;
   }
 
   .about__container .left {
