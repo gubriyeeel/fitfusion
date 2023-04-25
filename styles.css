@@ -146,7 +146,7 @@ header {
   align-items: center;
   height: 94vh;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   padding: 2em 9% 0;
   background-size: cover !important;
 }
@@ -291,6 +291,15 @@ header {
 /* ! About */
 
 /* Courses */
+
+.courses__container {
+  width: 100%;
+  min-height: 100vh;
+  background: url(/assets/images/courses-background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
 
 /* ! Courses */
 
