@@ -310,20 +310,22 @@ header {
   padding: var(--header-height) 2em;
 }
 
+.courses__content .section__title {
+  margin-bottom: 0.5em;
+}
+
 .courses__list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-top: 2em;
   text-align: center;
 }
 
 .courses__list .course {
   aspect-ratio: 3 / 2;
   width: 300px;
-  margin: 0.3em;
+  margin-top: 2em;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -431,6 +433,14 @@ header {
 
   .about__paragraph {
     padding-inline: 0.5em;
+  }
+
+  .courses__list .course {
+    width: 80%;
+  }
+
+  .courses__list {
+    display: flex;
   }
 
   .courses__content {
