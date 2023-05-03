@@ -385,7 +385,7 @@ header {
 }
 
 .trainor__card {
-  margin: 1em 0;
+  margin-block: 1em;
   position: relative;
 }
 
@@ -405,6 +405,25 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 1em;
+}
+
+.trainor__title {
+  flex-grow: 1;
+}
+
+.trainor__title hr {
+  border: 1px solid var(--primary-color);
+}
+
+.inner {
+  padding-inline: 1em;
+}
+
+.inner > a {
+  color: white;
+  font-size: 1.5rem;
+  margin-inline: 0.1em;
+  cursor: pointer;
 }
 
 /* ! Trainors */
