@@ -439,6 +439,19 @@ header {
 
 /* ! Trainors */
 
+/* Contact */
+.footer__nav {
+  list-style-type: none;
+  display: flex;
+  gap: 2.3em;
+}
+
+.footer__nav a {
+  color: white;
+}
+
+/* ! Contact */
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
