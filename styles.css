@@ -444,14 +444,72 @@ header {
   list-style-type: none;
   display: flex;
   gap: 2.3em;
+  margin-block: 1em;
 }
 
 .footer__nav a {
   color: white;
 }
 
-/* ! Contact */
+.footer {
+  width: 100%;
+}
 
+.footer__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.contact__container .logo {
+  font-size: 2em;
+  position: relative;
+}
+
+.contact__container .logo::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  background: url(/assets/images/slashes.png);
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  width: 50px;
+  z-index: 2;
+  transform: rotateX(180deg);
+}
+
+.subscription__container input {
+  width: 25em;
+  height: 3em;
+  padding: 0.4em 0.8em;
+  background-color: transparent;
+  border: 2px solid var(--white-color);
+  border-radius: 5px;
+  font-family: var(--font-body);
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.subscription__container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* ! Contact */
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
