@@ -382,6 +382,13 @@ header {
 .trainor__card > img {
   aspect-ratio: 2 / 3;
   height: 500px;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: var(--transition-fast);
+}
+
+.trainor__card > img:hover {
+  filter: grayscale(0);
 }
 
 .trainor__card {
@@ -424,6 +431,10 @@ header {
   font-size: 1.5rem;
   margin-inline: 0.1em;
   cursor: pointer;
+}
+
+.inner > a:hover {
+  color: var(--primary-color);
 }
 
 /* ! Trainors */
