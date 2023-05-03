@@ -532,6 +532,10 @@ header {
   .courses__container {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
+
+  .trainor__box {
+    flex-direction: column;
+  }
 }
 
 /* ! Media Queries */
