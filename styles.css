@@ -444,7 +444,7 @@ header {
   list-style-type: none;
   display: flex;
   gap: 2.3em;
-  margin-block: 1em;
+  margin-block: 2em;
 }
 
 .footer__nav a {
@@ -462,6 +462,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.5em;
+  background: url(/assets/images/contact-background.jpg);
 }
 
 .contact__container {
@@ -473,8 +474,12 @@ header {
 }
 
 .contact__container .logo {
-  font-size: 2em;
+  font-size: 3em;
   position: relative;
+}
+
+.contact__container h3 {
+  letter-spacing: 2px;
 }
 
 .contact__container .logo::after {
