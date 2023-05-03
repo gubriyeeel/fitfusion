@@ -357,6 +357,58 @@ header {
 
 /* ! Courses */
 
+/* Trainors */
+.trainor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--header-height) 2em;
+}
+
+.trainor__container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2em;
+}
+
+.trainor__box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 1em;
+}
+
+.trainor__card > img {
+  aspect-ratio: 2 / 3;
+  height: 500px;
+}
+
+.trainor__card {
+  margin: 1em 0;
+  position: relative;
+}
+
+.trainor__card::after {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 100px;
+  width: 100px;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.trainor__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+
+/* ! Trainors */
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
