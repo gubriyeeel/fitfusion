@@ -296,7 +296,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+
   width: 100%;
   min-height: 100vh;
   background: url(/assets/images/courses-background.png) no-repeat;
@@ -306,8 +307,9 @@ header {
 }
 
 .courses__content {
-  width: 100%;
+  max-width: 1200px;
   padding: var(--header-height) 2em;
+  z-index: 2;
 }
 
 .courses__content .section__title {
@@ -452,17 +454,25 @@ header {
 }
 
 .footer {
+  background: url(/assets/images/contact-background.jpg) no-repeat;
+  background-size: cover;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .footer__container {
   min-height: 100vh;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.5em;
-  background: url(/assets/images/contact-background.jpg);
+  padding-bottom: 2em;
+  z-index: 2;
 }
 
 .contact__container {
