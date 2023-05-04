@@ -1,7 +1,7 @@
 :root {
   --header-height: 3.5em;
   /* Colors */
-  --primary-color: rgb(255, 113, 1);
+  --primary-color: 255, 90, 79;
   --black-color: #1f1f1f;
   --white-color: #ffffff;
   /* Fonts */
@@ -56,14 +56,14 @@ button {
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 0.6em 2em;
-  background-color: var(--primary-color);
+  padding: 0.8em 2em;
+  background-color: rgba(var(--primary-color), 1);
   cursor: pointer;
   transition: var(--transition-fast);
 }
 
 button:hover {
-  color: var(--primary-color);
+  color: rgba(var(--primary-color), 1);
   background-color: var(--white-color);
 }
 
@@ -97,7 +97,7 @@ header {
 }
 
 .fit {
-  color: var(--primary-color);
+  color: rgba(var(--primary-color), 1);
 }
 
 .nav__menu {
@@ -118,11 +118,11 @@ header {
 }
 
 .nav__link:not(.active):hover {
-  border-bottom: 2px solid rgba(255, 113, 1, 0.5);
+  border-bottom: 2px solid rgba(var(--primary-color), 0.5);
 }
 
 .active {
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid rgba(var(--primary-color), 1);
 }
 
 .nav__toggle {
@@ -185,7 +185,7 @@ header {
     rgba(0, 0, 0, 1) 30%,
     rgba(255, 255, 255, 0) 100%
   );
-  background-color: rgba(255, 113, 1, 0.3);
+  background-color: rgba(var(--primary-color), 0.3);
   opacity: 0.5;
 }
 
@@ -215,6 +215,7 @@ header {
   width: 130px;
   z-index: -1;
   transform: rotateX(20deg);
+  filter: hue-rotate(-30deg);
 }
 
 .section__header {
@@ -346,7 +347,7 @@ header {
   transform: translate(-50%, -50%) scale(0);
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 113, 1, 0.1);
+  background-color: rgba(var(--primary-color), 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,7 +402,7 @@ header {
 .trainor__card::after {
   content: '';
   position: absolute;
-  background-color: var(--primary-color);
+  background-color: rgba(var(--primary-color), 1);
   height: 100px;
   width: 100px;
   top: -10px;
@@ -421,7 +422,7 @@ header {
 }
 
 .trainor__title hr {
-  border: 1px solid var(--primary-color);
+  border: 1px solid rgba(var(--primary-color), 1);
 }
 
 .inner {
@@ -436,7 +437,7 @@ header {
 }
 
 .inner > a:hover {
-  color: var(--primary-color);
+  color: rgba(var(--primary-color), 1);
 }
 
 /* ! Trainors */
@@ -503,6 +504,7 @@ header {
   width: 50px;
   z-index: 2;
   transform: rotateX(180deg);
+  filter: hue-rotate(-30deg);
 }
 
 .subscription__container input {
@@ -572,13 +574,13 @@ header {
     font-size: var(--desktop-title);
     color: var(--white-color);
     padding: 5px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid rgba(var(--primary-color), 1);
     border-radius: 5px;
     cursor: pointer;
   }
 
   .nav__toggle:hover {
-    color: var(--primary-color);
+    color: rgba(var(--primary-color), 1);
   }
 
   .section__title {
