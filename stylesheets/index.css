@@ -461,7 +461,6 @@ header {
   background: url(/assets/images/contact-background.jpg) no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,7 +468,7 @@ header {
 }
 
 .footer__container {
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -477,6 +476,20 @@ header {
   align-items: center;
   padding-bottom: 2em;
   z-index: 2;
+}
+
+.footer__socials i {
+  font-size: 1.8rem;
+  margin-inline: 0.1em;
+}
+
+.footer__socials i:hover {
+  color: rgba(var(--primary-color), 1);
+}
+
+.footer__socials {
+  text-align: center;
+  margin-block: 0.5em;
 }
 
 .contact__container {
@@ -533,6 +546,7 @@ header {
 }
 
 /* ! Contact */
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
