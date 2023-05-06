@@ -1,5 +1,5 @@
 * {
-  border: 0.5px solid rgb(255, 77, 77);
+  /* border: 0.5px solid rgb(255, 77, 77); */
 }
 
 strong {
@@ -52,6 +52,10 @@ strong {
   justify-content: start;
   flex-direction: column;
   margin: auto 0;
+}
+
+.section__title {
+  margin-bottom: 0;
 }
 
 .content__text .section__title {
