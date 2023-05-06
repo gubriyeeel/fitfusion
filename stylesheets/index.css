@@ -296,7 +296,7 @@ header {
   background: url(/assets/images/courses-background.png) no-repeat;
   background-position: center;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  position: relative;
 }
 
 .courses__content {
