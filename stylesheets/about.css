@@ -1,0 +1,55 @@
+.body__container {
+  min-height: 100vh;
+  padding: 3em;
+}
+
+.body__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__content > .content__card:nth-child(1) {
+  margin-top: 5em;
+}
+
+.main__content > .content__card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.main__content > .content__card:nth-child(2) > img {
+  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+}
+
+.content__card {
+  display: flex;
+  gap: 2em;
+  margin-block: 10em;
+}
+
+.content__card > img {
+  aspect-ratio: 3 / 2;
+  width: 50%;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+}
+
+.content__text {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.company__name {
+  font-size: 2rem;
+}
+
+.content__text > p {
+  padding-inline: 1em;
+  font-weight: 300;
+}
+
+.content__text > h3 {
+  font-weight: 600;
+}
