@@ -6,10 +6,6 @@ strong {
   font-weight: 500;
 }
 
-p {
-  padding: none;
-}
-
 .body__container {
   min-height: 100vh;
   padding: 3em;
