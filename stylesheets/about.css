@@ -6,6 +6,10 @@ strong {
   font-weight: 500;
 }
 
+p {
+  padding: none;
+}
+
 .body__container {
   min-height: 100vh;
   padding: 3em;
@@ -28,6 +32,8 @@ strong {
 
 .main__content > .content__card:nth-child(3) .content__text {
   text-align: end;
+  align-items: end;
+  justify-content: end;
 }
 
 .main__content > .content__card:nth-child(3) {
@@ -107,4 +113,8 @@ strong {
   object-fit: contain;
   aspect-ratio: inherit;
   margin: 2em;
+}
+
+.about__cta {
+  text-align: center;
 }
