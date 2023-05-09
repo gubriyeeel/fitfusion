@@ -6,4 +6,13 @@
 Gabriel Rupert Roy Sufrir<br>
 Gian Pascua
 
+Stack used to develop this website:
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript (<i>Functionality</>)</li>
+  <li>PHP</li>
+  <li>MySQL (<i>Database</>)</li>
+</ul>
+
 <img src="/assets/readme/hero.jpg" alt="A barbel">
