@@ -350,6 +350,11 @@ header {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.course__info h3 {
+  color: white;
+  font-weight: 400;
+}
+
 /* ! Courses */
 
 /* Trainors */
