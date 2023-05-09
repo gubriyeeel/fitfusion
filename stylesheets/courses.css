@@ -50,6 +50,10 @@
   filter: hue-rotate(-30deg);
 }
 
+.variation__sub {
+  font-size: medium;
+}
+
 .course__variation span {
   font-weight: bold;
 }
