@@ -10,9 +10,9 @@ Stack used to develop this website:
 <ul>
   <li>HTML</li>
   <li>CSS</li>
-  <li>JavaScript (<i>Functionality<I/>)</li>
+  <li>JavaScript (<i>Functionality</i>)</li>
   <li>PHP</li>
-  <li>MySQL (<i>Database</>)</li>
+  <li>MySQL (<i>Database</i>)</li>
 </ul>
 
 <img src="/assets/readme/hero.jpg" alt="A barbel">
