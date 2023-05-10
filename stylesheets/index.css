@@ -206,7 +206,7 @@ header {
   position: absolute;
   top: -10px;
   left: -20px;
-  background: url(/assets/images/slashes.png);
+  background: url(../assets/images/slashes.png);
   background-size: cover;
   aspect-ratio: 1 / 1;
   width: 130px;
@@ -298,7 +298,8 @@ header {
 
   width: 100%;
   min-height: 100vh;
-  background: url(/assets/images/courses-background.png) no-repeat;
+  background: url(http://localhost/FitFusion/assets/images/courses-background.png)
+    no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;

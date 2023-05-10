@@ -4,11 +4,16 @@ if (typeof window !== 'undefined') {
   const toggle = document.querySelector('.nav__toggle');
   const burgerMenu = document.querySelector('#burger__menu');
   const backgroundSlider = document.querySelector('#sliding__background');
+  const startButton = document.querySelector('#start');
+
+  startButton.addEventListener('click', () => {
+    window.location.href = 'http://localhost/FitFusion/pages/register.php';
+  });
 
   const backgroundImages = [
-    '../assets/images/background-slide-one.jpg',
-    '../assets/images/background-slide-three.jpg',
-    '../assets/images/background-slide-two.jpg',
+    'http://localhost/FitFusion//assets/images/background-slide-one.jpg',
+    'http://localhost/FitFusion//assets/images/background-slide-three.jpg',
+    'http://localhost/FitFusion//assets/images/background-slide-two.jpg',
   ];
 
   const numBackgroundImages = backgroundImages.length;
