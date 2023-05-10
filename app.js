@@ -7,13 +7,13 @@ if (typeof window !== 'undefined') {
   const startButton = document.querySelector('#start');
 
   startButton.addEventListener('click', () => {
-    window.location.href = 'http://localhost/FitFusion/pages/register.php';
+    window.location.href = 'http://localhost/FitFusion/pages/signup-check.php';
   });
 
   const backgroundImages = [
-    'http://localhost/FitFusion//assets/images/background-slide-one.jpg',
-    'http://localhost/FitFusion//assets/images/background-slide-three.jpg',
-    'http://localhost/FitFusion//assets/images/background-slide-two.jpg',
+    '../assets/images/background-slide-one.jpg',
+    '../assets/images/background-slide-three.jpg',
+    '../assets/images/background-slide-two.jpg',
   ];
 
   const numBackgroundImages = backgroundImages.length;

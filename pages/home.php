@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+?>
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFusion</title>
-    <link rel="stylesheet" href="/stylesheets/index.css" />
-    <link rel="stylesheet" href="/stylesheets/about.css" />
-    <script
-      src="https://kit.fontawesome.com/9824d21dba.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+    <link rel="stylesheet" href="../stylesheets/about.css" />
+    <script src="https://kit.fontawesome.com/9824d21dba.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!-- Header -->
     <header>
       <div class="header__container">
-        <a href="" class="logo">
-          <span class="company__name"
-            ><span class="fit">fit</span><span class="fusion">fusion</span>
+        <a href="#" class="logo">
+          <span class="company__name"><span class="fit">fit</span>fusion</span>
           </span>
         </a>
         <nav class="nav">
@@ -46,9 +49,7 @@
         <div class="content">
           <h3 class="section__header">
             get fit today at
-            <span class="company__name header__text"
-              ><span class="fit">fit</span>fusion</span
-            >
+            <span class="company__name header__text"><span class="fit">fit</span>fusion</span>
           </h3>
           <h1 class="section__title">
             transform your body with our expert trainers
@@ -74,9 +75,7 @@
           <h1 class="section__title">about us</h1>
           <h3 class="section__header">our story</h3>
           <p class="about__paragraph">
-            <span class="company__name header__text"
-              ><span class="fit">fit</span>fusion</span
-            >
+            <span class="company__name header__text"><span class="fit">fit</span>fusion</span>
             provides a wide range of classes as a service, tailored to meet the
             needs of fitness enthusiasts of all levels. from yoga and pilates to
             strength and conditioning, our expert trainers are dedicated to
@@ -101,49 +100,49 @@
           </h3>
           <h1 class="section__title">courses</h1>
           <div class="courses__list">
-            <a href="/pages/courses/stretches.html">
+            <a href="../pages/courses/stretches.html">
               <div class="course">
-                <img src="/assets/images/courses-one.png" alt="" />
+                <img src="../assets/images/courses-one.png" alt="" />
                 <div class="course__info">
                   <h3>stretches</h3>
                 </div>
               </div>
             </a>
-            <a href="/pages/courses/barbell.html">
+            <a href="../pages/courses/barbell.html">
               <div class="course">
-                <img src="/assets/images/courses-two.png" alt="" />
+                <img src="../assets/images/courses-two.png" alt="" />
                 <div class="course__info">
                   <h3>barbell</h3>
                 </div>
               </div>
             </a>
-            <a href="/pages/courses/dumbbells.html">
+            <a href="../pages/courses/dumbbells.html">
               <div class="course">
-                <img src="/assets/images/courses-five.png" alt="" />
+                <img src="../assets/images/courses-five.png" alt="" />
                 <div class="course__info">
                   <h3>dumbbells</h3>
                 </div>
               </div>
             </a>
-            <a href="/pages/courses/cables.html">
+            <a href="../pages/courses/cables.html">
               <div class="course">
-                <img src="/assets/images/courses-four.png" alt="" />
+                <img src="../assets/images/courses-four.png" alt="" />
                 <div class="course__info">
                   <h3>cables</h3>
                 </div>
               </div>
             </a>
-            <a href="/pages/courses/yoga.html">
+            <a href="../pages/courses/yoga.html">
               <div class="course">
-                <img src="/assets/images/courses-three.png" alt="" />
+                <img src="../assets/images/courses-three.png" alt="" />
                 <div class="course__info">
                   <h3>yoga</h3>
                 </div>
               </div>
             </a>
-            <a href="/pages/courses/quads.html">
+            <a href="../pages/courses/quads.html">
               <div class="course">
-                <img src="/assets/images/courses-six.png" alt="" />
+                <img src="../assets/images/courses-six.png" alt="" />
                 <div class="course__info">
                   <h3>quads</h3>
                 </div>
@@ -161,62 +160,44 @@
 
         <div class="trainor__box">
           <div class="trainor__card">
-            <img src="/assets/images/trainor-one.jpg" alt="" />
+            <img src="../assets/images/trainor-one.jpg" alt="" />
             <div class="trainor__details">
               <div class="trainor__title">
                 <h3>Yohan</h3>
                 <hr />
               </div>
               <div class="inner">
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><i class="fa-brands fa-square-facebook"></i
-                ></a>
-                <a href="https://www.instagram.com/" target="_blank"
-                  ><i class="fa-brands fa-square-instagram"></i
-                ></a>
-                <a href="https://twitter.com/" target="_blank"
-                  ><i class="fa-brands fa-square-twitter"></i
-                ></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
               </div>
             </div>
           </div>
           <div class="trainor__card">
-            <img src="/assets/images/trainor-two.jpg" alt="" />
+            <img src="../assets/images/trainor-two.jpg" alt="" />
             <div class="trainor__details">
               <div class="trainor__title">
                 <h3>Vince</h3>
                 <hr />
               </div>
               <div class="inner">
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><i class="fa-brands fa-square-facebook"></i
-                ></a>
-                <a href="https://www.instagram.com/" target="_blank"
-                  ><i class="fa-brands fa-square-instagram"></i
-                ></a>
-                <a href="https://twitter.com/" target="_blank"
-                  ><i class="fa-brands fa-square-twitter"></i
-                ></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
               </div>
             </div>
           </div>
           <div class="trainor__card">
-            <img src="/assets/images/trainor-three.jpg" alt="" />
+            <img src="../assets/images/trainor-three.jpg" alt="" />
             <div class="trainor__details">
               <div class="trainor__title">
                 <h3>Christine</h3>
                 <hr />
               </div>
               <div class="inner">
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><i class="fa-brands fa-square-facebook"></i
-                ></a>
-                <a href="https://www.instagram.com/" target="_blank"
-                  ><i class="fa-brands fa-square-instagram"></i
-                ></a>
-                <a href="https://twitter.com/" target="_blank"
-                  ><i class="fa-brands fa-square-twitter"></i
-                ></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
               </div>
             </div>
           </div>
@@ -230,8 +211,7 @@
       <div class="footer__container">
         <div class="contact__container">
           <a href="" class="logo">
-            <span class="company__name"
-              ><span class="fit">fit</span><span class="fusion">fusion</span>
+            <span class="company__name"><span class="fit">fit</span><span class="fusion">fusion</span>
             </span>
           </a>
           <div class="subscription__container">
@@ -265,4 +245,13 @@
     <!-- ! Contact -->
     <script src="../app.js"></script>
   </body>
-</html>
+
+  </html>
+
+
+<?php
+} else {
+  header("Location: index.php");
+  exit();
+}
+?>
