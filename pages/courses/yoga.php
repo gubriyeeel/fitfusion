@@ -31,6 +31,7 @@
             <li><a href="#courses" class="nav__link active">Courses</a></li>
             <li><a href="#trainor" class="nav__link">Trainors</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li><a class="logout" href="../logout.php">logout</a></li>
           </ul>
         </nav>
         <div class="nav__toggle">
@@ -42,29 +43,36 @@
     <!-- Content -->
     <section class="body__container">
       <div>
-        <a title="Back" id="back__button" href="/pages/courses/yoga.html">
-          <i i class="fa-solid fa-circle-chevron-left"></i>
+        <a title="Back" id="back__button" href="/pages/index.html#courses">
+          <i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+        <a href="/pages/./courses/yoga-two.html">
+          <i
+            title="Forward"
+            id="back__button"
+            class="fa-solid fa-circle-chevron-right"
+          ></i>
         </a>
       </div>
       <div class="courses">
         <div class="course__variation">
           <div class="course__header">
             <h1 class="variation__title">
-              yoga <span class="variation__sub">(legs)</span>
+              yoga <span class="variation__sub">(chest)</span>
             </h1>
-            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
+            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/yoga2-one.mp4"
+              src="/assets/videos/yoga-one.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/yoga2-two.mp4"
+              src="/assets/videos/yoga-two.mp4"
               playsinline
               muted
               autoplay
@@ -73,18 +81,18 @@
           </div>
           <div class="course__steps">
             <ol class="steps__list">
+              <li>Lie on your stomach with your arms at your sides.</li>
               <li>
-                Stand straight with your feet hip-width apart and arms at your
-                sides.
+                Bend your knees and bring your heels towards your buttocks.
               </li>
-              <li>Inhale and raise your arms straight up over your head.</li>
+              <li>Reach back with your hands and grab your ankles.</li>
               <li>
-                Exhale and bend your knees, lowering your hips as if you were
-                sitting in a chair.
+                Inhale and lift your chest off the ground, pulling your legs up
+                and back with your hands.
               </li>
               <li>
-                Hold the pose for a few breaths, then inhale and stand up
-                straight.
+                Keep your gaze forward and hold the pose for a few breaths
+                before releasing back to the ground.
               </li>
             </ol>
           </div>
@@ -96,14 +104,14 @@
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/yoga2-three.mp4"
+              src="/assets/videos/yoga-three.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/yoga2-four.mp4"
+              src="/assets/videos/yoga-four.mp4"
               playsinline
               muted
               autoplay
@@ -113,21 +121,16 @@
           <div class="course__steps">
             <ol class="steps__list">
               <li>
-                Begin in Crescent Moon Pose with your right foot forward and a
-                block nearby.
+                Stand tall with your feet hip-width apart and your arms at your
+                sides.
               </li>
               <li>
-                Place the block at the highest height under your left hand.
+                Press your feet into the ground and engage your leg muscles.
               </li>
+              <li>Lift your chest and roll your shoulders back and down.</li>
               <li>
-                Reach your left arm behind you and take hold of your left foot
-                or ankle.
-              </li>
-              <li>
-                Gently pull your foot towards your buttocks while pressing your
-                left hand into the block to deepen the stretch in your left
-                quad. Hold for a few breaths before releasing and repeating on
-                the other side.
+                Take a deep breath in, and as you exhale, release any tension in
+                your body and relax your muscles.
               </li>
             </ol>
           </div>

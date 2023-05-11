@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFusion</title>
-    <link rel="stylesheet" href="../../stylesheets/courses.css" />
-    <link rel="stylesheet" href="../../stylesheets/index.css" />
+    <link rel="stylesheet" href="/stylesheets/courses.css" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
 
     <script
       src="https://kit.fontawesome.com/9824d21dba.js"
@@ -25,12 +25,13 @@
         <nav class="nav">
           <ul class="nav__menu">
             <li>
-              <a href="../pages/index.html" class="nav__link">Home</a>
+              <a href="/pages/index.html" class="nav__link">Home</a>
             </li>
             <li><a href="#about" class="nav__link">About</a></li>
             <li><a href="#courses" class="nav__link active">Courses</a></li>
             <li><a href="#trainor" class="nav__link">Trainors</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li><a class="logout" href="logout.php">logout</a></li>
           </ul>
         </nav>
         <div class="nav__toggle">
@@ -42,27 +43,29 @@
     <!-- Content -->
     <section class="body__container">
       <div>
-        <a title="Back" id="back__button" href="../home.php#courses">
+        <a title="Back" id="back__button" href="/pages/courses/yoga.html">
           <i i class="fa-solid fa-circle-chevron-left"></i>
         </a>
       </div>
       <div class="courses">
         <div class="course__variation">
           <div class="course__header">
-            <h1 class="variation__title">barbell bench press</h1>
-            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
+            <h1 class="variation__title">
+              yoga <span class="variation__sub">(legs)</span>
+            </h1>
+            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="../../assets/videos/barbell-one.mp4"
+              src="/assets/videos/yoga2-one.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="../../assets/videos/barbell-two.mp4"
+              src="/assets/videos/yoga2-two.mp4"
               playsinline
               muted
               autoplay
@@ -72,29 +75,36 @@
           <div class="course__steps">
             <ol class="steps__list">
               <li>
-                Lay flat on the bench with your feet on the ground. With
-                straight arms unrack the bar.
+                Stand straight with your feet hip-width apart and arms at your
+                sides.
               </li>
-              <li>Lower the bar to your mid chest</li>
-              <li>Raise the bar until you've locked your elbows.</li>
+              <li>Inhale and raise your arms straight up over your head.</li>
+              <li>
+                Exhale and bend your knees, lowering your hips as if you were
+                sitting in a chair.
+              </li>
+              <li>
+                Hold the pose for a few breaths, then inhale and stand up
+                straight.
+              </li>
             </ol>
           </div>
         </div>
         <div class="course__variation">
           <div class="course__header">
-            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
+            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="../../assets/videos/barbell-three.mp4"
+              src="/assets/videos/yoga2-three.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="../../assets/videos/barbell-four.mp4"
+              src="/assets/videos/yoga2-four.mp4"
               playsinline
               muted
               autoplay
@@ -103,15 +113,22 @@
           </div>
           <div class="course__steps">
             <ol class="steps__list">
-              <li>Position the bench between 30 and 45 degrees.</li>
               <li>
-                Lay flat on the bench with your feet on the ground. With
-                straight arms unrack the bar.
+                Begin in Crescent Moon Pose with your right foot forward and a
+                block nearby.
               </li>
-              <li>Lower the bar to your mid chest</li>
               <li>
-                Raise the bar (slowly and controlled) until you've locked your
-                elbows.
+                Place the block at the highest height under your left hand.
+              </li>
+              <li>
+                Reach your left arm behind you and take hold of your left foot
+                or ankle.
+              </li>
+              <li>
+                Gently pull your foot towards your buttocks while pressing your
+                left hand into the block to deepen the stretch in your left
+                quad. Hold for a few breaths before releasing and repeating on
+                the other side.
               </li>
             </ol>
           </div>
@@ -139,7 +156,7 @@
 
           <nav>
             <ul class="footer__nav">
-              <li><a href="../pages/index.html" class="nav__link">home</a></li>
+              <li><a href="/pages/index.html" class="nav__link">home</a></li>
               <li><a href="#about" class="nav__link">about</a></li>
               <li><a href="#courses" class="nav__link">courses</a></li>
               <li><a href="#trainor" class="nav__link">trainors</a></li>

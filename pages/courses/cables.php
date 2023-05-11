@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFusion</title>
-    <link rel="stylesheet" href="/stylesheets/courses.css" />
-    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link rel="stylesheet" href="../../stylesheets/courses.css" />
+    <link rel="stylesheet" href="../../stylesheets/index.css" />
 
     <script
       src="https://kit.fontawesome.com/9824d21dba.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -25,12 +26,17 @@
         <nav class="nav">
           <ul class="nav__menu">
             <li>
-              <a href="/pages/index.html" class="nav__link">Home</a>
+              <a href="../home.php" class="nav__link">Home</a>
             </li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#courses" class="nav__link active">Courses</a></li>
-            <li><a href="#trainor" class="nav__link">Trainors</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li><a href="../home.php#about" class="nav__link">About</a></li>
+            <li>
+              <a href="../home.php#courses" class="nav__link active">Courses</a>
+            </li>
+            <li>
+              <a href="../home.php#trainor" class="nav__link">Trainors</a>
+            </li>
+            <li><a href="../home.php#contact" class="nav__link">Contact</a></li>
+            <li><a class="logout" href="../logout.php">logout</a></li>
           </ul>
         </nav>
         <div class="nav__toggle">
@@ -43,35 +49,26 @@
     <section class="body__container">
       <div>
         <a title="Back" id="back__button" href="/pages/index.html#courses">
-          <i class="fa-solid fa-circle-chevron-left"></i>
-        </a>
-        <a href="/pages/./courses/yoga-two.html">
-          <i
-            title="Forward"
-            id="back__button"
-            class="fa-solid fa-circle-chevron-right"
-          ></i>
+          <i i class="fa-solid fa-circle-chevron-left"></i>
         </a>
       </div>
       <div class="courses">
         <div class="course__variation">
           <div class="course__header">
-            <h1 class="variation__title">
-              yoga <span class="variation__sub">(chest)</span>
-            </h1>
-            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
+            <h1 class="variation__title">cable chest press</h1>
+            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/yoga-one.mp4"
+              src="/assets/videos/cable-one.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/yoga-two.mp4"
+              src="/assets/videos/cable-two.mp4"
               playsinline
               muted
               autoplay
@@ -80,37 +77,37 @@
           </div>
           <div class="course__steps">
             <ol class="steps__list">
-              <li>Lie on your stomach with your arms at your sides.</li>
               <li>
-                Bend your knees and bring your heels towards your buttocks.
-              </li>
-              <li>Reach back with your hands and grab your ankles.</li>
-              <li>
-                Inhale and lift your chest off the ground, pulling your legs up
-                and back with your hands.
+                Use a handle attachment. The cables should be set to shoulder
+                height.
               </li>
               <li>
-                Keep your gaze forward and hold the pose for a few breaths
-                before releasing back to the ground.
+                Bring both of the handles to your chest and make sure you are in
+                the center of the cable crossover.
+              </li>
+              <li>Walk a few steps forward. Then press the weight forward.</li>
+              <li>
+                From there, you should flex and extend at both the shoulders and
+                elbows simultaneously.
               </li>
             </ol>
           </div>
         </div>
         <div class="course__variation">
           <div class="course__header">
-            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
+            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/yoga-three.mp4"
+              src="/assets/videos/cable-three.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/yoga-four.mp4"
+              src="/assets/videos/cable-four.mp4"
               playsinline
               muted
               autoplay
@@ -120,16 +117,17 @@
           <div class="course__steps">
             <ol class="steps__list">
               <li>
-                Stand tall with your feet hip-width apart and your arms at your
-                sides.
+                Use a handle attachment set all the way to the bottom of the
+                machine.
               </li>
               <li>
-                Press your feet into the ground and engage your leg muscles.
+                Bring both of the handles to your chest and make sure you are in
+                the center of the cable crossover.
               </li>
-              <li>Lift your chest and roll your shoulders back and down.</li>
               <li>
-                Take a deep breath in, and as you exhale, release any tension in
-                your body and relax your muscles.
+                Walk a few steps forward. Then press the weight forward. From
+                there, your shoulders should horizontally abduct and adduct
+                while your elbows stay in a fixed position.
               </li>
             </ol>
           </div>

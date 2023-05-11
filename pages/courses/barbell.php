@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitFusion</title>
-    <link rel="stylesheet" href="/stylesheets/courses.css" />
-    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link rel="stylesheet" href="../../stylesheets/courses.css" />
+    <link rel="stylesheet" href="../../stylesheets/index.css" />
 
     <script
       src="https://kit.fontawesome.com/9824d21dba.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -25,12 +26,17 @@
         <nav class="nav">
           <ul class="nav__menu">
             <li>
-              <a href="/pages/index.html" class="nav__link">Home</a>
+              <a href="../pages/index.html" class="nav__link">Home</a>
             </li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#courses" class="nav__link active">Courses</a></li>
-            <li><a href="#trainor" class="nav__link">Trainors</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li><a href="../home.php#about" class="nav__link">About</a></li>
+            <li>
+              <a href="../home.php#courses" class="nav__link active">Courses</a>
+            </li>
+            <li>
+              <a href="../home.php#trainor" class="nav__link">Trainors</a>
+            </li>
+            <li><a href="../home.php#contact" class="nav__link">Contact</a></li>
+            <li><a class="logout" href="../logout.php">logout</a></li>
           </ul>
         </nav>
         <div class="nav__toggle">
@@ -42,27 +48,27 @@
     <!-- Content -->
     <section class="body__container">
       <div>
-        <a title="Back" id="back__button" href="/pages/index.html#courses">
+        <a title="Back" id="back__button" href="../home.php#courses">
           <i i class="fa-solid fa-circle-chevron-left"></i>
         </a>
       </div>
       <div class="courses">
         <div class="course__variation">
           <div class="course__header">
-            <h1 class="variation__title">dumbbells press</h1>
-            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
+            <h1 class="variation__title">barbell bench press</h1>
+            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/dumbbell-one.mp4"
+              src="../../assets/videos/barbell-one.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/dumbbell-two.mp4"
+              src="../../assets/videos/barbell-two.mp4"
               playsinline
               muted
               autoplay
@@ -72,11 +78,11 @@
           <div class="course__steps">
             <ol class="steps__list">
               <li>
-                Lay flat on the incline bench with your feet on the ground.
-                Raise the dumbbells until you have straight arms.
+                Lay flat on the bench with your feet on the ground. With
+                straight arms unrack the bar.
               </li>
-              <li>Lower the dumbbells to your mid chest.</li>
-              <li>Raise the dumbbells until you've locked your elbows.</li>
+              <li>Lower the bar to your mid chest</li>
+              <li>Raise the bar until you've locked your elbows.</li>
             </ol>
           </div>
         </div>
@@ -87,14 +93,14 @@
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/dumbbell-three.mp4"
+              src="../../assets/videos/barbell-three.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/dumbbell-four.mp4"
+              src="../../assets/videos/barbell-four.mp4"
               playsinline
               muted
               autoplay
@@ -103,16 +109,16 @@
           </div>
           <div class="course__steps">
             <ol class="steps__list">
-              <li>Start in a bench press position with two dumbbells.</li>
+              <li>Position the bench between 30 and 45 degrees.</li>
               <li>
-                Break at one of your elbows first while keeping the other elbow
-                extended.
+                Lay flat on the bench with your feet on the ground. With
+                straight arms unrack the bar.
               </li>
+              <li>Lower the bar to your mid chest</li>
               <li>
-                Your working arm should reach your side before pressing back to
-                the ceiling.
+                Raise the bar (slowly and controlled) until you've locked your
+                elbows.
               </li>
-              <li>Then alternate to the other arm.</li>
             </ol>
           </div>
         </div>
@@ -139,11 +145,17 @@
 
           <nav>
             <ul class="footer__nav">
-              <li><a href="/pages/index.html" class="nav__link">home</a></li>
-              <li><a href="#about" class="nav__link">about</a></li>
-              <li><a href="#courses" class="nav__link">courses</a></li>
-              <li><a href="#trainor" class="nav__link">trainors</a></li>
-              <li><a href="#contact" class="nav__link">contact</a></li>
+              <li><a href="../home.php" class="nav__link">home</a></li>
+              <li><a href="../home.php#about" class="nav__link">about</a></li>
+              <li>
+                <a href="../home.php#courses" class="nav__link">courses</a>
+              </li>
+              <li>
+                <a href="../home.php#trainor" class="nav__link">trainors</a>
+              </li>
+              <li>
+                <a href="../home.php#contact" class="nav__link">contact</a>
+              </li>
             </ul>
           </nav>
         </div>

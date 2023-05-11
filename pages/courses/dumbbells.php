@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+
+  header('Location: login.php');
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,6 +41,7 @@
             <li><a href="#courses" class="nav__link active">Courses</a></li>
             <li><a href="#trainor" class="nav__link">Trainors</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li><a class="logout" href="../logout.php">logout</a></li>
           </ul>
         </nav>
         <div class="nav__toggle">
@@ -49,20 +60,20 @@
       <div class="courses">
         <div class="course__variation">
           <div class="course__header">
-            <h1 class="variation__title">cable chest press</h1>
+            <h1 class="variation__title">dumbbells press</h1>
             <p class="difficulty"><span>Difficulty:</span> Beginner</p>
           </div>
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/cable-one.mp4"
+              src="/assets/videos/dumbbell-one.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/cable-two.mp4"
+              src="/assets/videos/dumbbell-two.mp4"
               playsinline
               muted
               autoplay
@@ -72,18 +83,11 @@
           <div class="course__steps">
             <ol class="steps__list">
               <li>
-                Use a handle attachment. The cables should be set to shoulder
-                height.
+                Lay flat on the incline bench with your feet on the ground.
+                Raise the dumbbells until you have straight arms.
               </li>
-              <li>
-                Bring both of the handles to your chest and make sure you are in
-                the center of the cable crossover.
-              </li>
-              <li>Walk a few steps forward. Then press the weight forward.</li>
-              <li>
-                From there, you should flex and extend at both the shoulders and
-                elbows simultaneously.
-              </li>
+              <li>Lower the dumbbells to your mid chest.</li>
+              <li>Raise the dumbbells until you've locked your elbows.</li>
             </ol>
           </div>
         </div>
@@ -94,14 +98,14 @@
           <div class="course__videos">
             <video
               class="workout__video"
-              src="/assets/videos/cable-three.mp4"
+              src="/assets/videos/dumbbell-three.mp4"
               muted
               autoplay
               loop
             ></video>
             <video
               class="workout__video"
-              src="/assets/videos/cable-four.mp4"
+              src="/assets/videos/dumbbell-four.mp4"
               playsinline
               muted
               autoplay
@@ -110,19 +114,16 @@
           </div>
           <div class="course__steps">
             <ol class="steps__list">
+              <li>Start in a bench press position with two dumbbells.</li>
               <li>
-                Use a handle attachment set all the way to the bottom of the
-                machine.
+                Break at one of your elbows first while keeping the other elbow
+                extended.
               </li>
               <li>
-                Bring both of the handles to your chest and make sure you are in
-                the center of the cable crossover.
+                Your working arm should reach your side before pressing back to
+                the ceiling.
               </li>
-              <li>
-                Walk a few steps forward. Then press the weight forward. From
-                there, your shoulders should horizontally abduct and adduct
-                while your elbows stay in a fixed position.
-              </li>
+              <li>Then alternate to the other arm.</li>
             </ol>
           </div>
         </div>

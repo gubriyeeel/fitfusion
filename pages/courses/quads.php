@@ -31,6 +31,7 @@
             <li><a href="#courses" class="nav__link active">Courses</a></li>
             <li><a href="#trainor" class="nav__link">Trainors</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li><a class="logout" href="../logout.php">logout</a></li>
           </ul>
         </nav>
         <div class="nav__toggle">

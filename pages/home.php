@@ -1,9 +1,9 @@
 <?php
 session_start();
-
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 ?>
+
   <!DOCTYPE html>
   <html lang="en">
 
@@ -19,28 +19,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
   <body>
     <!-- Header -->
-    <header>
-      <div class="header__container">
-        <a href="#" class="logo">
-          <span class="company__name"><span class="fit">fit</span>fusion</span>
-          </span>
-        </a>
-        <nav class="nav">
-          <ul class="nav__menu">
-            <li>
-              <a href="#" class="nav__link active">Home</a>
-            </li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#courses" class="nav__link">Courses</a></li>
-            <li><a href="#trainor" class="nav__link">Trainors</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="nav__toggle">
-          <i id="burger__menu" class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-    </header>
+    <?php
+
+    include 'header.php';
+
+    ?>
     <!-- ! Header -->
     <!-- Home -->
     <section class="home" id="home">
@@ -85,7 +68,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             <br />
             come join our community today and let's achieve your goals together!
           </p>
-          <a href="/pages/about.html"><button>learn more</button></a>
+          <a href="../pages/about.html"><button>learn more</button></a>
         </div>
       </div>
     </section>
@@ -206,48 +189,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     </section>
     <!-- ! Trainor -->
     <!-- Contact -->
-    <footer class="footer" id="contact">
-      <div class="overlay"></div>
-      <div class="footer__container">
-        <div class="contact__container">
-          <a href="" class="logo">
-            <span class="company__name"><span class="fit">fit</span><span class="fusion">fusion</span>
-            </span>
-          </a>
-          <div class="subscription__container">
-            <h3>subscribe to our news letter</h3>
-            <form action="#" method="POST">
-              <input type="email" placeholder="Enter your email" />
-              <button>Subscribe</button>
-            </form>
-          </div>
+    <?php
 
-          <nav>
-            <ul class="footer__nav">
-              <li><a href="#" class="nav__link">home</a></li>
-              <li><a href="#about" class="nav__link">about</a></li>
-              <li><a href="#courses" class="nav__link">courses</a></li>
-              <li><a href="#trainor" class="nav__link">trainors</a></li>
-              <li><a href="#contact" class="nav__link">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="copyrights">
-          <div class="footer__socials">
-            <a><i class="fa-brands fa-square-facebook"></i></a>
-            <a><i class="fa-brands fa-square-instagram"></i></a>
-            <a><i class="fa-brands fa-square-twitter"></i></a>
-          </div>
-          <p>2023 - All Rights Reserved</p>
-        </div>
-      </div>
-    </footer>
+    include "footer.php";
+
+    ?>
     <!-- ! Contact -->
     <script src="../app.js"></script>
   </body>
 
   </html>
-
 
 <?php
 } else {

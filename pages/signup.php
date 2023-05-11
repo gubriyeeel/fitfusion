@@ -49,7 +49,7 @@
         <input type="password" name="re_password" placeholder="Confirm password"><br>
 
         <button type="submit">Sign Up</button>
-        <a href="index.php" class="ca">Already have an account?</a>
+        <a href="login-page.php" class="ca">Already have an account?</a>
       </form>
     </div>
   </section>

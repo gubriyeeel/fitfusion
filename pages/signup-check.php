@@ -37,7 +37,7 @@ if (
 		header("Location: signup.php?error=Name is required&$user_data");
 		exit();
 	} else if ($pass !== $re_pass) {
-		header("Location: signup.php?error=The confirmation password  does not match&$user_data");
+		header("Location: signup.php?error=The confirmation password does not match&$user_data");
 		exit();
 	} else {
 
@@ -54,7 +54,7 @@ if (
 			$sql2 = "INSERT INTO users(user_name, password, name) VALUES('$uname', '$pass', '$name')";
 			$result2 = mysqli_query($conn, $sql2);
 			if ($result2) {
-				header("Location: signup.php?success=Your account has been created successfully");
+				header("Location: signup.php?success=Your account has been created successfully.");
 				exit();
 			} else {
 				header("Location: signup.php?error=unknown error occurred&$user_data");
@@ -63,6 +63,7 @@ if (
 		}
 	}
 } else {
+
 	header("Location: signup.php");
 	exit();
 }
