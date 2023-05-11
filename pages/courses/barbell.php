@@ -1,175 +1,93 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitFusion</title>
-    <link rel="stylesheet" href="../../stylesheets/courses.css" />
-    <link rel="stylesheet" href="../../stylesheets/index.css" />
 
-    <script
-      src="https://kit.fontawesome.com/9824d21dba.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitFusion</title>
+  <link rel="stylesheet" href="../../stylesheets/courses.css" />
+  <link rel="stylesheet" href="../../stylesheets/index.css" />
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="header__container">
-        <a href="" class="logo">
-          <span class="company__name"
-            ><span class="fit">fit</span><span class="fusion">fusion</span>
-          </span>
-        </a>
-        <nav class="nav">
-          <ul class="nav__menu">
-            <li>
-              <a href="../pages/index.html" class="nav__link">Home</a>
-            </li>
-            <li><a href="../home.php#about" class="nav__link">About</a></li>
-            <li>
-              <a href="../home.php#courses" class="nav__link active">Courses</a>
-            </li>
-            <li>
-              <a href="../home.php#trainor" class="nav__link">Trainors</a>
-            </li>
-            <li><a href="../home.php#contact" class="nav__link">Contact</a></li>
-            <li><a class="logout" href="../logout.php">logout</a></li>
-          </ul>
-        </nav>
-        <div class="nav__toggle">
-          <i id="burger__menu" class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-    </header>
-    <!-- ! Header -->
-    <!-- Content -->
-    <section class="body__container">
-      <div>
-        <a title="Back" id="back__button" href="../home.php#courses">
-          <i i class="fa-solid fa-circle-chevron-left"></i>
-        </a>
-      </div>
-      <div class="courses">
-        <div class="course__variation">
-          <div class="course__header">
-            <h1 class="variation__title">barbell bench press</h1>
-            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
-          </div>
-          <div class="course__videos">
-            <video
-              class="workout__video"
-              src="../../assets/videos/barbell-one.mp4"
-              muted
-              autoplay
-              loop
-            ></video>
-            <video
-              class="workout__video"
-              src="../../assets/videos/barbell-two.mp4"
-              playsinline
-              muted
-              autoplay
-              loop
-            ></video>
-          </div>
-          <div class="course__steps">
-            <ol class="steps__list">
-              <li>
-                Lay flat on the bench with your feet on the ground. With
-                straight arms unrack the bar.
-              </li>
-              <li>Lower the bar to your mid chest</li>
-              <li>Raise the bar until you've locked your elbows.</li>
-            </ol>
-          </div>
-        </div>
-        <div class="course__variation">
-          <div class="course__header">
-            <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
-          </div>
-          <div class="course__videos">
-            <video
-              class="workout__video"
-              src="../../assets/videos/barbell-three.mp4"
-              muted
-              autoplay
-              loop
-            ></video>
-            <video
-              class="workout__video"
-              src="../../assets/videos/barbell-four.mp4"
-              playsinline
-              muted
-              autoplay
-              loop
-            ></video>
-          </div>
-          <div class="course__steps">
-            <ol class="steps__list">
-              <li>Position the bench between 30 and 45 degrees.</li>
-              <li>
-                Lay flat on the bench with your feet on the ground. With
-                straight arms unrack the bar.
-              </li>
-              <li>Lower the bar to your mid chest</li>
-              <li>
-                Raise the bar (slowly and controlled) until you've locked your
-                elbows.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ! Content -->
-    <!-- Contact -->
-    <footer class="footer" id="contact">
-      <div class="overlay"></div>
-      <div class="footer__container">
-        <div class="contact__container">
-          <a href="" class="logo">
-            <span class="company__name"
-              ><span class="fit">fit</span><span class="fusion">fusion</span>
-            </span>
-          </a>
-          <div class="subscription__container">
-            <h3>subscribe to our news letter</h3>
-            <form action="#" method="POST">
-              <input type="email" placeholder="Enter your email" />
-              <button>Subscribe</button>
-            </form>
-          </div>
+  <script src="https://kit.fontawesome.com/9824d21dba.js" crossorigin="anonymous"></script>
+</head>
 
-          <nav>
-            <ul class="footer__nav">
-              <li><a href="../home.php" class="nav__link">home</a></li>
-              <li><a href="../home.php#about" class="nav__link">about</a></li>
-              <li>
-                <a href="../home.php#courses" class="nav__link">courses</a>
-              </li>
-              <li>
-                <a href="../home.php#trainor" class="nav__link">trainors</a>
-              </li>
-              <li>
-                <a href="../home.php#contact" class="nav__link">contact</a>
-              </li>
-            </ul>
-          </nav>
+<body>
+  <!-- Header -->
+  <?php
+
+  include '../header.php';
+
+  ?>
+  <!-- ! Header -->
+  <!-- Content -->
+  <section class="body__container">
+    <div>
+      <a title="Back" id="back__button" href="../home.php#courses">
+        <i i class="fa-solid fa-circle-chevron-left"></i>
+      </a>
+    </div>
+    <div class="courses">
+      <div class="course__variation">
+        <div class="course__header">
+          <h1 class="variation__title">barbell bench press</h1>
+          <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
         </div>
-        <div class="copyrights">
-          <div class="footer__socials">
-            <a><i class="fa-brands fa-square-facebook"></i></a>
-            <a><i class="fa-brands fa-square-instagram"></i></a>
-            <a><i class="fa-brands fa-square-twitter"></i></a>
-          </div>
-          <p>2023 - All Rights Reserved</p>
+        <div class="course__videos">
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/barbell-one.mp4" playsinline muted autoplay loop></video>
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/barbell-two.mp4" playsinline muted autoplay loop></video>
+        </div>
+        <div class="course__steps">
+          <ol class="steps__list">
+            <li>
+              Lay flat on the bench with your feet on the ground. With
+              straight arms unrack the bar.
+            </li>
+            <li>Lower the bar to your mid chest</li>
+            <li>Raise the bar until you've locked your elbows.</li>
+          </ol>
         </div>
       </div>
-    </footer>
-    <!-- ! Contact -->
-    <script src="/app.js"></script>
-  </body>
+      <div class="course__variation">
+        <div class="course__header">
+          <p class="difficulty"><span>Difficulty:</span> Intermediate</p>
+        </div>
+        <div class="course__videos">
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/barbell-three.mp4" playsinline muted autoplay loop></video>
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/barbell-four.mp4" playsinline muted autoplay loop></video>
+        </div>
+        <div class="course__steps">
+          <ol class="steps__list">
+            <li>Position the bench between 30 and 45 degrees.</li>
+            <li>
+              Lay flat on the bench with your feet on the ground. With
+              straight arms unrack the bar.
+            </li>
+            <li>Lower the bar to your mid chest</li>
+            <li>
+              Raise the bar (slowly and controlled) until you've locked your
+              elbows.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ! Content -->
+  <!-- Contact -->
+  <?php
+
+  include '../footer.php';
+
+  ?>
+  <!-- ! Contact -->
+  <script src="../../app.js"></script>
+</body>
+
 </html>

@@ -160,6 +160,11 @@ header {
   background-size: cover !important;
 }
 
+.user__name {
+  font-size: 2rem;
+  text-decoration: underline rgba(var(--primary-color), 1);
+}
+
 .background__image {
   position: absolute;
   top: 50%;
@@ -218,12 +223,13 @@ header {
 .section__header {
   font-size: var(--h3-font-size);
   font-weight: normal;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   color: white;
 }
 
 .home p {
   color: var(--white-color);
+  font-size: 1.5rem;
   margin-bottom: 2em;
   color: rgb(217, 217, 217);
 }
@@ -548,7 +554,7 @@ header {
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 840px) {
   header {
     padding-inline: 5vw;
   }

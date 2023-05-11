@@ -23,16 +23,31 @@
   <!-- Content -->
   <section class="body__container">
     <div>
-      <a title="Back" id="back__button" href="/pages/index.html#about">
-        <i i class="fa-solid fa-circle-chevron-left"></i>
-      </a>
+      <?php
+      if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+      ?>
+
+        <a title="Back" id="back__button" href="../pages/home.php#about">
+          <i i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+
+      <?php
+      } else {
+      ?>
+        <a title="Back" id="back__button" href="../pages/index.php#about">
+          <i i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+      <?php
+      }
+      ?>
     </div>
     <div class="body__header">
       <h1 class="section__title">about us</h1>
     </div>
     <div class="main__content">
       <div class="content__card">
-        <img src="/assets/images/about-founder.jpg" alt="" />
+        <img src="../assets/images/about-founder.jpg" alt="" />
         <div class="content__text">
           <h2 class="section__title">how we started</h2>
           <p class="about__paragraph">
@@ -60,13 +75,13 @@
           </p>
         </div>
         <div class="partners__logos">
-          <img id="partners__logo" src="/assets/images/partners-nike.png" alt="" />
-          <img id="partners__logo" src="/assets/images/partners-ua.png" alt="" />
-          <img id="partners__logo" src="/assets/images/partners-reebok.png" alt="" />
+          <img id="partners__logo" src="../assets/images/partners-nike.png" alt="" />
+          <img id="partners__logo" src="../assets/images/partners-ua.png" alt="" />
+          <img id="partners__logo" src="../assets/images/partners-reebok.png" alt="" />
         </div>
       </div>
       <div class="content__card">
-        <img src="/assets/images/about-team.jpg" alt="" />
+        <img src="../assets/images/about-team.jpg" alt="" />
         <div class="content__text">
           <h2 class="section__title">our team</h2>
           <p class="about__paragraph last">
@@ -80,49 +95,18 @@
             second home to many members who have found a sense of belonging in
             the community.
           </p>
-          <button>join us</button>
+
         </div>
       </div>
     </div>
   </section>
   <!-- ! Content -->
   <!-- Contact -->
-  <footer class="footer" id="contact">
-    <div class="overlay"></div>
-    <div class="footer__container">
-      <div class="contact__container">
-        <a href="" class="logo">
-          <span class="company__name"><span class="fit">fit</span><span class="fusion">fusion</span>
-          </span>
-        </a>
-        <div class="subscription__container">
-          <h3>subscribe to our news letter</h3>
-          <form action="#" method="POST">
-            <input type="email" placeholder="Enter your email" />
-            <button>Subscribe</button>
-          </form>
-        </div>
+  <?php
 
-        <nav>
-          <ul class="footer__nav">
-            <li><a href="/pages/index.html" class="nav__link">home</a></li>
-            <li><a href="#about" class="nav__link active">about</a></li>
-            <li><a href="#courses" class="nav__link">courses</a></li>
-            <li><a href="#trainor" class="nav__link">trainors</a></li>
-            <li><a href="#contact" class="nav__link">contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="copyrights">
-        <div class="footer__socials">
-          <a><i class="fa-brands fa-square-facebook"></i></a>
-          <a><i class="fa-brands fa-square-instagram"></i></a>
-          <a><i class="fa-brands fa-square-twitter"></i></a>
-        </div>
-        <p>2023 - All Rights Reserved</p>
-      </div>
-    </div>
-  </footer>
+  include 'footer.php';
+
+  ?>
   <!-- ! Contact -->
   <script src="../app.js"></script>
 </body>

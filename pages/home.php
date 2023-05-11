@@ -38,7 +38,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             transform your body with our expert trainers
           </h1>
           <p>join our fitness community and achieve your goals</p>
-          <button id="start">join now</button>
+          <p>Welcome, <span class="user__name"><?php echo $_SESSION['name']; ?><span>!</p>
         </div>
       </div>
     </section>
@@ -68,7 +68,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             <br />
             come join our community today and let's achieve your goals together!
           </p>
-          <a href="../pages/about.html"><button>learn more</button></a>
+          <a href="../pages/about.php"><button>learn more</button></a>
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
           </h3>
           <h1 class="section__title">courses</h1>
           <div class="courses__list">
-            <a href="../pages/courses/stretches.html">
+            <a href="../pages/courses/stretches.php">
               <div class="course">
                 <img src="../assets/images/courses-one.png" alt="" />
                 <div class="course__info">
@@ -91,7 +91,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </div>
               </div>
             </a>
-            <a href="../pages/courses/barbell.html">
+            <a href="../pages/courses/barbell.php">
               <div class="course">
                 <img src="../assets/images/courses-two.png" alt="" />
                 <div class="course__info">
@@ -99,7 +99,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </div>
               </div>
             </a>
-            <a href="../pages/courses/dumbbells.html">
+            <a href="../pages/courses/dumbbells.php">
               <div class="course">
                 <img src="../assets/images/courses-five.png" alt="" />
                 <div class="course__info">
@@ -107,7 +107,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </div>
               </div>
             </a>
-            <a href="../pages/courses/cables.html">
+            <a href="../pages/courses/cables.php">
               <div class="course">
                 <img src="../assets/images/courses-four.png" alt="" />
                 <div class="course__info">
@@ -115,7 +115,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </div>
               </div>
             </a>
-            <a href="../pages/courses/yoga.html">
+            <a href="../pages/courses/yoga.php">
               <div class="course">
                 <img src="../assets/images/courses-three.png" alt="" />
                 <div class="course__info">
@@ -123,7 +123,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 </div>
               </div>
             </a>
-            <a href="../pages/courses/quads.html">
+            <a href="../pages/courses/quads.php">
               <div class="course">
                 <img src="../assets/images/courses-six.png" alt="" />
                 <div class="course__info">

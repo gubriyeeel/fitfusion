@@ -4,11 +4,6 @@ if (typeof window !== 'undefined') {
   const toggle = document.querySelector('.nav__toggle');
   const burgerMenu = document.querySelector('#burger__menu');
   const backgroundSlider = document.querySelector('#sliding__background');
-  const startButton = document.querySelector('#start');
-
-  startButton.addEventListener('click', () => {
-    window.location.href = 'http://localhost/FitFusion/pages/signup-check.php';
-  });
 
   const backgroundImages = [
     '../assets/images/background-slide-one.jpg',

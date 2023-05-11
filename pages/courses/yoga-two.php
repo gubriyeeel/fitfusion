@@ -1,180 +1,109 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitFusion</title>
-    <link rel="stylesheet" href="/stylesheets/courses.css" />
-    <link rel="stylesheet" href="/stylesheets/index.css" />
 
-    <script
-      src="https://kit.fontawesome.com/9824d21dba.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="header__container">
-        <a href="" class="logo">
-          <span class="company__name"
-            ><span class="fit">fit</span><span class="fusion">fusion</span>
-          </span>
-        </a>
-        <nav class="nav">
-          <ul class="nav__menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitFusion</title>
+  <link rel="stylesheet" href="http://localhost/FitFusion/stylesheets/courses.css" />
+  <link rel="stylesheet" href="http://localhost/FitFusion/stylesheets/index.css" />
+
+  <script src="https://kit.fontawesome.com/9824d21dba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <?php
+
+  include '../header.php';
+
+  ?>
+  <!-- ! Header -->
+  <!-- Content -->
+  <section class="body__container">
+    <div>
+      <a title="Back" id="back__button" href="../courses/yoga.php">
+        <i i class="fa-solid fa-circle-chevron-left"></i>
+      </a>
+    </div>
+    <div class="courses">
+      <div class="course__variation">
+        <div class="course__header">
+          <h1 class="variation__title">
+            yoga <span class="variation__sub">(legs)</span>
+          </h1>
+          <p class="difficulty"><span>Difficulty:</span> Beginner</p>
+        </div>
+        <div class="course__videos">
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/yoga2-one.mp4" playsinline muted autoplay loop></video>
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/yoga2-two.mp4" playsinline muted autoplay loop></video>
+        </div>
+        <div class="course__steps">
+          <ol class="steps__list">
             <li>
-              <a href="/pages/index.html" class="nav__link">Home</a>
+              Stand straight with your feet hip-width apart and arms at your
+              sides.
             </li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#courses" class="nav__link active">Courses</a></li>
-            <li><a href="#trainor" class="nav__link">Trainors</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
-            <li><a class="logout" href="logout.php">logout</a></li>
-          </ul>
-        </nav>
-        <div class="nav__toggle">
-          <i id="burger__menu" class="fa-solid fa-bars"></i>
+            <li>Inhale and raise your arms straight up over your head.</li>
+            <li>
+              Exhale and bend your knees, lowering your hips as if you were
+              sitting in a chair.
+            </li>
+            <li>
+              Hold the pose for a few breaths, then inhale and stand up
+              straight.
+            </li>
+          </ol>
         </div>
       </div>
-    </header>
-    <!-- ! Header -->
-    <!-- Content -->
-    <section class="body__container">
-      <div>
-        <a title="Back" id="back__button" href="/pages/courses/yoga.html">
-          <i i class="fa-solid fa-circle-chevron-left"></i>
-        </a>
-      </div>
-      <div class="courses">
-        <div class="course__variation">
-          <div class="course__header">
-            <h1 class="variation__title">
-              yoga <span class="variation__sub">(legs)</span>
-            </h1>
-            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
-          </div>
-          <div class="course__videos">
-            <video
-              class="workout__video"
-              src="/assets/videos/yoga2-one.mp4"
-              muted
-              autoplay
-              loop
-            ></video>
-            <video
-              class="workout__video"
-              src="/assets/videos/yoga2-two.mp4"
-              playsinline
-              muted
-              autoplay
-              loop
-            ></video>
-          </div>
-          <div class="course__steps">
-            <ol class="steps__list">
-              <li>
-                Stand straight with your feet hip-width apart and arms at your
-                sides.
-              </li>
-              <li>Inhale and raise your arms straight up over your head.</li>
-              <li>
-                Exhale and bend your knees, lowering your hips as if you were
-                sitting in a chair.
-              </li>
-              <li>
-                Hold the pose for a few breaths, then inhale and stand up
-                straight.
-              </li>
-            </ol>
-          </div>
+      <div class="course__variation">
+        <div class="course__header">
+          <p class="difficulty"><span>Difficulty:</span> Beginner</p>
         </div>
-        <div class="course__variation">
-          <div class="course__header">
-            <p class="difficulty"><span>Difficulty:</span> Beginner</p>
-          </div>
-          <div class="course__videos">
-            <video
-              class="workout__video"
-              src="/assets/videos/yoga2-three.mp4"
-              muted
-              autoplay
-              loop
-            ></video>
-            <video
-              class="workout__video"
-              src="/assets/videos/yoga2-four.mp4"
-              playsinline
-              muted
-              autoplay
-              loop
-            ></video>
-          </div>
-          <div class="course__steps">
-            <ol class="steps__list">
-              <li>
-                Begin in Crescent Moon Pose with your right foot forward and a
-                block nearby.
-              </li>
-              <li>
-                Place the block at the highest height under your left hand.
-              </li>
-              <li>
-                Reach your left arm behind you and take hold of your left foot
-                or ankle.
-              </li>
-              <li>
-                Gently pull your foot towards your buttocks while pressing your
-                left hand into the block to deepen the stretch in your left
-                quad. Hold for a few breaths before releasing and repeating on
-                the other side.
-              </li>
-            </ol>
-          </div>
+        <div class="course__videos">
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/yoga2-three.mp4" playsinline muted autoplay loop></video>
+          <video class="workout__video" src="http://localhost/FitFusion/assets/videos/yoga2-four.mp4" playsinline muted autoplay loop></video>
+        </div>
+        <div class="course__steps">
+          <ol class="steps__list">
+            <li>
+              Begin in Crescent Moon Pose with your right foot forward and a
+              block nearby.
+            </li>
+            <li>
+              Place the block at the highest height under your left hand.
+            </li>
+            <li>
+              Reach your left arm behind you and take hold of your left foot
+              or ankle.
+            </li>
+            <li>
+              Gently pull your foot towards your buttocks while pressing your
+              left hand into the block to deepen the stretch in your left
+              quad. Hold for a few breaths before releasing and repeating on
+              the other side.
+            </li>
+          </ol>
         </div>
       </div>
-    </section>
-    <!-- ! Content -->
-    <!-- Contact -->
-    <footer class="footer" id="contact">
-      <div class="overlay"></div>
-      <div class="footer__container">
-        <div class="contact__container">
-          <a href="" class="logo">
-            <span class="company__name"
-              ><span class="fit">fit</span><span class="fusion">fusion</span>
-            </span>
-          </a>
-          <div class="subscription__container">
-            <h3>subscribe to our news letter</h3>
-            <form action="#" method="POST">
-              <input type="email" placeholder="Enter your email" />
-              <button>Subscribe</button>
-            </form>
-          </div>
+    </div>
+  </section>
+  <!-- ! Content -->
+  <!-- Contact -->
+  <?php
 
-          <nav>
-            <ul class="footer__nav">
-              <li><a href="/pages/index.html" class="nav__link">home</a></li>
-              <li><a href="#about" class="nav__link">about</a></li>
-              <li><a href="#courses" class="nav__link">courses</a></li>
-              <li><a href="#trainor" class="nav__link">trainors</a></li>
-              <li><a href="#contact" class="nav__link">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="copyrights">
-          <div class="footer__socials">
-            <a><i class="fa-brands fa-square-facebook"></i></a>
-            <a><i class="fa-brands fa-square-instagram"></i></a>
-            <a><i class="fa-brands fa-square-twitter"></i></a>
-          </div>
-          <p>2023 - All Rights Reserved</p>
-        </div>
-      </div>
-    </footer>
-    <!-- ! Contact -->
-    <script src="/app.js"></script>
-  </body>
+  include '../footer.php';
+
+  ?>
+  <!-- ! Contact -->
+  <script src="/app.js"></script>
+</body>
+
 </html>

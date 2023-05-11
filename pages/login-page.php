@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FitFusion</title>
-  <link rel="stylesheet" href="http://localhost/FitFusion/stylesheets/login.css" />
+  <link rel="stylesheet" href="../stylesheets/login.css" />
   <script src="https://kit.fontawesome.com/9824d21dba.js" crossorigin="anonymous"></script>
 </head>
 

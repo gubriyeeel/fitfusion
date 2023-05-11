@@ -14,7 +14,7 @@
         <li><a href="#trainor" class="nav__link">Trainors</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
         <li>
-          <a class="logout" href="login-page.php">join us</a>
+          <a class="nav__link logout" href="login-page.php">login</a>
         </li>
       </ul>
     </nav>

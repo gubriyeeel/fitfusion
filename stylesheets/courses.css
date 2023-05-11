@@ -13,6 +13,7 @@
 
 .courses {
   max-width: 1200px;
+  margin-inline: auto;
 }
 
 #back__button {
@@ -25,7 +26,7 @@
 }
 
 .course__variation {
-  margin-top: 3em;
+  margin-top: 10em;
 }
 
 .variation__title {
@@ -101,4 +102,14 @@
   border-radius: 50%;
   text-align: center;
   line-height: 1.9em;
+}
+
+@media only screen and (max-width: 840px) {
+  .course__videos {
+    display: unset;
+  }
+
+  .workout__video {
+    margin-top: 1em;
+  }
 }
