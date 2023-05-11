@@ -649,6 +649,17 @@ header {
   .trainor__box {
     flex-direction: column;
   }
+
+  .footer__nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__nav .nav__link {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 /* ! Media Queries */
