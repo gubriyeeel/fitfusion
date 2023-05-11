@@ -1,4 +1,4 @@
-<b>Date Started</b>: April 4, 2023
+<b>Date Started</b>: April 4, 2023<br>
 <b>Release Started</b>: May 11, 2023
 
 <b>fitfusion</b> is a fitness website that offers a wide range of workouts, including strength training, cardio, yoga, and more.
