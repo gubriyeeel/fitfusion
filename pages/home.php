@@ -20,8 +20,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   <body>
     <?php
 
-    echo session_status();
-
     ?>
     <!-- Header -->
     <?php

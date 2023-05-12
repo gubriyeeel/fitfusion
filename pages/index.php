@@ -15,8 +15,6 @@
   <!-- Header -->
   <?php
 
-  echo session_status();
-
   include 'index-header.php';
 
   ?>
