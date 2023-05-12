@@ -16,14 +16,14 @@
   <!-- Header -->
   <?php
 
-  include 'header.php';
+  include 'index-header.php';
 
   ?>
   <!-- ! Header -->
   <!-- Content -->
   <section class="body__container">
     <div>
-      <a title="Back" id="back__button" href="../pages/home.php#about">
+      <a title="Back" id="back__button" href="../pages/index.php#about">
         <i i class="fa-solid fa-circle-chevron-left"></i>
       </a>
     </div>

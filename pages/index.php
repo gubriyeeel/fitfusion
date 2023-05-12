@@ -15,6 +15,8 @@
   <!-- Header -->
   <?php
 
+  echo session_status();
+
   include 'index-header.php';
 
   ?>
@@ -62,7 +64,7 @@
           <br />
           come join our community today and let's achieve your goals together!
         </p>
-        <a href="../pages/about.php"><button>learn more</button></a>
+        <a href="../pages/index-about.php"><button>learn more</button></a>
       </div>
     </div>
   </section>

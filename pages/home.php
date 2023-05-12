@@ -18,6 +18,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   </head>
 
   <body>
+    <?php
+
+    echo session_status();
+
+    ?>
     <!-- Header -->
     <?php
 
