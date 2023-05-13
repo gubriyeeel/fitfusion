@@ -5,7 +5,8 @@
 
 <b>Contributors:</b><br>
 Gabriel Rupert Roy Sufrir<br>
-Gian Pascua
+Gian Pascua<br>
+John Renan Ramales
 
 Stack used to develop this website:
 <ul>
